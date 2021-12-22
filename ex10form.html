@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        입력양식 태그
+        <form></form> = 웹페이지에 입력폼을 만들 때 사용하는 태그 
+
+        속성
+        1. action = 입력데이터의 전달 위치 지정 -> 필수 속성!!!!
+        2. method = 입력데이터의 전달 방식 지정(GET/POST) ->필수!
+        3. name = from태그의 이름 지정
+    -->
+
+    <!-- 
+        <input type = "text"> = 데이터를 입력할 수 있는 태그
+        <input type = "password"> = 비밀번호를 입력하는 태그(입력한 값이 안보인다.)
+        <input type = "file" > = 파일 업로드시 사용
+     -->
+
+    <!-- 여기서 부터 데이터를 넘길 공간을 만들어주자!!!!!!!  ->>from태그!!
+        
+        속성값
+        1. name : 입력한 값을 구분하기 위해 이름 지정
+        2. placeholder : 미리보기 텍스트
+        3. autofocus : 자동으로 커서를 설정해준다.
+        4. maxlength : 글자수 제한(데이터 낭비 제한)
+        5. value : 기본 값 지정
+        6. readonly : 읽기 전용 지정!(홈페이지에서 수정이 안되다.)
+
+    -->
+    <form action="#" method="get">
+      <!-- #은 현재페이지를 의미한다. -->
+      <p>일반 텍스트를 작성하는 공간</p>
+      ID :
+      <input
+        type="text"
+        name="id"
+        placeholder="아이디를 입력해주세요."
+        autofocus
+      />
+      <br />
+      PW : <input type="password" name="pw" maxlength="10" />
+      <br />
+      주소 : <input type="text" name="add" value="광주" readonly />
+
+      <!-- 체크  checkbox, radio 
+        이 두가지 타입은 무조건 name, value를 설정해야한다.
+        1. checkbox : 중복이 가능
+        2. radio : 중복이 불가
+        
+    -->
+      <br /><br />
+      <p>좋아하는 커피 메뉴를 모드 골라주세요.</p>
+      아메리카노
+      <input type="checkbox" name="coffee" value="Americano" /> 카페라떼
+      <input type="radio" name="coffee" value="CafeLatte" /> <br /><br />
+      <p>성별을 골라주세요</p>
+      남자<input type="radio" name="gender" value="남자" /> 여자<input
+        type="radio"
+        name="gender"
+        value="여자"
+      />
+
+      <!--   선택할수 있는 태그! select 
+        
+    -->
+      <br /><br />
+      <select>
+        <option value="네이버">네이버</option>
+        <option value="다음">다음</option>
+        <option value="구글">구글</option>
+      </select>
+
+      <br /><br />
+      <!-- 파일 업로드 시  -->
+      <input type="file" />
+      <!-- 색을 지정할 시 -->
+      <input type="color" />
+      <!-- 수치를 입력할 때 -->
+      <input type="number" />
+      <!-- 범위를 입력할 때 -->
+      <input type="range" />
+      <!-- 날짜를 입력할 때 -->
+      <input type="date" />
+      <!-- 중요!!!! -->
+      <br /><br />
+      <!-- 제출할 때(form태그 안에있는 내용을 보내는거다!) -->
+      <input type="submit" value="보내기" />
+      <!-- 초기화 버튼(from태그 안에있는 내용을 초기화) -->
+      <input type="reset" value="다시작성" / >
+    </form>
+  </body>
+</html>

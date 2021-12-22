@@ -1,0 +1,38 @@
+2021.12.22 
+
+[HTML] 
+
+ 
+
+1. 입력 폼을 만들 때 > form 
+
+- action : 전달 위치
+
+- method : 전달 방식 
+
+ 
+
+2. 사용자가 입력할 수 있도록 > input 
+
+- 텍스트 type="text"
+
+- 비밀번호 type="password"
+
+- 동시 선택 태그 checkbox 
+
+- 하나만 선택 태그 radio 
+
+   >필수적인 속성! name, value 
+
+- 제출 submit 
+
+- 초기화 reset
+
+ 
+
+3. 선택 목록 상자 > select 
+
+- option 
+
+ 
+
